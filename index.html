@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Café Montaña | Café de especialidad en Honduras</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Young+Serif&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --bulma-family-primary: "DM Sans", system-ui, sans-serif;
+      --forest: #14342B;
+      --leaf: #2F6B55;
+      --gold: #D1A12C;
+    }
+
+    body {
+      background: #F2F5F0;
+      color: #1B2B25;
+    }
+
+    .title,
+    .navbar-brand .navbar-item {
+      font-family: "Young Serif", Georgia, serif;
+      font-weight: 400;
+    }
+
+    .title {
+      color: inherit;
+    }
+
+    .navbar {
+      background: var(--forest);
+    }
+
+    .navbar-brand .navbar-item,
+    .navbar-item,
+    .navbar-burger {
+      color: #DDE8E0;
+    }
+
+    a.navbar-item:hover,
+    a.navbar-item:focus {
+      background: transparent;
+      color: var(--gold);
+    }
+
+    .navbar-menu {
+      background: var(--forest);
+    }
+
+    .hero {
+      background: var(--forest);
+      color: #fff;
+    }
+
+    .hero .subtitle {
+      color: #C9D8CF;
+      max-width: 34rem;
+    }
+
+    .button.is-gold {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #1B1B1B;
+      font-weight: 500;
+    }
+
+    .button.is-gold:hover {
+      background: #E0B340;
+      border-color: #E0B340;
+    }
+
+    .button.is-light-outline {
+      background: transparent;
+      border-color: #fff;
+      color: #fff;
+    }
+
+    .button.is-light-outline:hover {
+      background: #fff;
+      color: var(--forest);
+    }
+
+    .origin {
+      background: #fff;
+      border-left: 6px solid var(--leaf);
+      padding: 1.5rem;
+      height: 100%;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
+
+    .menu-item+.menu-item {
+      border-top: 1px solid #D5DED7;
+    }
+
+    .price {
+      color: var(--leaf);
+      font-weight: 700;
+    }
+
+    .section-white {
+      background: #fff;
+    }
+
+    .footer {
+      background: var(--forest);
+      color: #C9D8CF;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body class="has-navbar-fixed-top">
+
+  <nav class="navbar is-fixed-top" aria-label="Navegación principal">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-4" href="#inicio">Café Montaña</a>
+        <a role="button" class="navbar-burger" aria-label="Abrir menú" aria-expanded="false" data-target="menuNav">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span
+            aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="menuNav" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#origen">Origen</a>
+          <a class="navbar-item" href="#carta">Carta</a>
+          <a class="navbar-item" href="#visitanos">Visítanos</a>
+          <a class="navbar-item" href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero is-medium" id="inicio">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1 mb-4">Café de las montañas de Honduras, tostado cada semana.</h1>
+        <p class="subtitle is-5 mb-5">Granos de Marcala, Copán y Opatoro, tostados en pequeños lotes y servidos en el
+          momento.</p>
+        <div class="buttons">
+          <a href="#carta" class="button is-gold is-medium">Ver la carta</a>
+          <a href="#visitanos" class="button is-light-outline is-medium">Cómo llegar</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="origen">
+    <div class="container">
+      <h2 class="title is-2 mb-5">Tres orígenes, tres sabores</h2>
+      <div class="columns">
+        <div class="column">
+          <div class="origin">
+            <h3 class="title is-4">Marcala</h3>
+            <p>Notas de panela y chocolate. Cuerpo suave, ideal para espresso y café filtrado.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="origin">
+            <h3 class="title is-4">Copán</h3>
+            <p>Acidez cítrica y final dulce. El favorito para métodos de goteo.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="origin">
+            <h3 class="title is-4">Opatoro</h3>
+            <p>Frutos rojos y aroma floral. Lote limitado, disponible hasta agotar existencias.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white" id="carta">
+    <div class="container">
+      <div class="columns is-variable is-8">
+        <div class="column">
+          <h2 class="title is-2 mb-5">Bebidas</h2>
+          <div class="menu-item">
+            <div><strong>Espresso</strong><br><small class="has-text-grey">Marcala, doble shot</small></div>
+            <span class="price">L 35</span>
+          </div>
+          <div class="menu-item">
+            <div><strong>Capuchino</strong><br><small class="has-text-grey">Espresso, leche vaporizada, espuma</small>
+            </div>
+            <span class="price">L 55</span>
+          </div>
+          <div class="menu-item">
+            <div><strong>V60 de Copán</strong><br><small class="has-text-grey">Café filtrado, preparado al
+                momento</small></div>
+            <span class="price">L 60</span>
+          </div>
+          <div class="menu-item">
+            <div><strong>Cold brew</strong><br><small class="has-text-grey">Infusión en frío por 18 horas</small></div>
+            <span class="price">L 65</span>
+          </div>
+        </div>
+        <div class="column">
+          <h2 class="title is-2 mb-5">Para acompañar</h2>
+          <div class="menu-item">
+            <div><strong>Pan de banano</strong><br><small class="has-text-grey">Hecho en casa, con nueces</small></div>
+            <span class="price">L 40</span>
+          </div>
+          <div class="menu-item">
+            <div><strong>Baleada de la casa</strong><br><small class="has-text-grey">Frijoles, queso y
+                mantequilla</small></div>
+            <span class="price">L 45</span>
+          </div>
+          <div class="menu-item">
+            <div><strong>Tres leches</strong><br><small class="has-text-grey">Porción individual</small></div>
+            <span class="price">L 50</span>
+          </div>
+          <div class="menu-item">
+            <div><strong>Bolsa de café 250 g</strong><br><small class="has-text-grey">Grano entero o molido</small>
+            </div>
+            <span class="price">L 190</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="visitanos">
+    <div class="container">
+      <h2 class="title is-2 mb-5">Visítanos</h2>
+      <div class="columns">
+        <div class="column">
+          <h3 class="title is-5 mb-2">Dirección</h3>
+          <p class="mb-4">Col. Palmira, Tegucigalpa, Honduras</p>
+          <h3 class="title is-5 mb-2">Horario</h3>
+          <table class="table" style="background: transparent;">
+            <tbody>
+              <tr>
+                <td>Lunes a viernes</td>
+                <td>7:00 a.m. – 7:00 p.m.</td>
+              </tr>
+              <tr>
+                <td>Sábado</td>
+                <td>8:00 a.m. – 8:00 p.m.</td>
+              </tr>
+              <tr>
+                <td>Domingo</td>
+                <td>9:00 a.m. – 3:00 p.m.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="section section-white" id="contacto">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="title is-2 mb-5">Escríbenos</h2>
+          <form id="formContacto" novalidate>
+            <div class="field">
+              <label class="label" for="nombre">Nombre</label>
+              <div class="control"><input class="input" type="text" id="nombre" required></div>
+              <p class="help is-danger is-hidden">Escribe tu nombre.</p>
+            </div>
+            <div class="field">
+              <label class="label" for="correo">Correo</label>
+              <div class="control"><input class="input" type="email" id="correo" required></div>
+              <p class="help is-danger is-hidden">Escribe un correo válido.</p>
+            </div>
+            <div class="field">
+              <label class="label" for="mensaje">Mensaje</label>
+              <div class="control"><textarea class="textarea" id="mensaje" rows="4" required></textarea></div>
+              <p class="help is-danger is-hidden">Escribe tu mensaje.</p>
+            </div>
+            <button type="submit" class="button is-gold">Enviar mensaje</button>
+          </form>
+          <div class="notification is-success mt-4 is-hidden" id="exito" role="status">Mensaje enviado. Te respondemos
+            pronto.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container is-flex is-flex-wrap-wrap is-justify-content-space-between">
+      <span>&copy; 2026 Café Montaña</span>
+      <span>Tegucigalpa, Honduras</span>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.navbar-burger').forEach(function (burger) {
+      burger.addEventListener('click', function () {
+        var menu = document.getElementById(burger.dataset.target);
+        var open = burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active', open);
+        burger.setAttribute('aria-expanded', open);
+      });
+    });
+
+    document.getElementById('formContacto').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var ok = true;
+      this.querySelectorAll('.input, .textarea').forEach(function (campo) {
+        var valido = campo.checkValidity();
+        campo.classList.toggle('is-danger', !valido);
+        campo.closest('.field').querySelector('.help').classList.toggle('is-hidden', valido);
+        if (!valido) ok = false;
+      });
+      if (ok) {
+        document.getElementById('exito').classList.remove('is-hidden');
+        this.reset();
+      }
+    });
+  </script>
+</body>
+
+</html>
